@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/user')
 const bcrypt = require('bcrypt')
-const messages = require('../helpers/messages')
 const msg = require('../helpers/messages')
 
 const authService = {

@@ -13,10 +13,10 @@ router.post('/register', async (req, res) => {
     }
 })
 
-router.post('/login', async (res, req) => {
+router.post('/login', async (req, res) => {
     try {
         const {email, password} = req.body
-        if(!email || password){
+        if(!email || !password){
             res.status(400).json(msg.fieldsRequired)
         }
         const token = await authService.login(req.body)
@@ -26,4 +26,4 @@ router.post('/login', async (res, req) => {
     }
 })
 
-module.exports = authRoutes
+module.exports = router
