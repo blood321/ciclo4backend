@@ -6,7 +6,7 @@ const User = require('../models/user')
 router.post('/register', async (req, res) => {
     try {
         const user = new User(req.body)
-        const token = await auhtService.register(user)
+        const token = await authService.register(user)
         res.status(token.code).json(token);
     } catch (error) {
         res.send(error)
@@ -25,3 +25,5 @@ router.post('/login', async (res, req) => {
         res.send(error)
     }
 })
+
+module.exports = authRoutes
