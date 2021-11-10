@@ -7,15 +7,23 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
+  "apidoc": {
+    "name": "Backend Finapp",
+    "version": "0.1.0",
+    "title": "Documentación API Finapp",
+    "description": "Documentación en línea de los endpoints del backend"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "apidoc": "^0.50.1",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-validator": "^6.13.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.11",
     "morgan": "^1.10.0",
